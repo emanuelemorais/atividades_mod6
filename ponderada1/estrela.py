@@ -47,7 +47,6 @@ class TurtleController(Node):
 
     #função que controla ordem e duração dos movimentos
     def move_turtle(self):
-        print("Movimento iniciado")
         if (self.timer < 10):
             self.movimento1()
             
@@ -64,6 +63,7 @@ class TurtleController(Node):
             self.movimento5()
 
 def main(args=None):
+    print("Movimento iniciado")
     rclpy.init()
     turtle_controller = TurtleController()
     rclpy.spin(turtle_controller)

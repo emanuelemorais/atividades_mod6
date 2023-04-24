@@ -47,9 +47,9 @@ class TurtleController(Node):
 
     #função que controla ordem e duração dos movimentos
     def move_turtle(self):
+        print("Movimento iniciado")
         if (self.timer < 10):
             self.movimento1()
-            print(self.timer)
             
         if (self.timer >= 10 and self.timer < 20):
             self.movimento2()

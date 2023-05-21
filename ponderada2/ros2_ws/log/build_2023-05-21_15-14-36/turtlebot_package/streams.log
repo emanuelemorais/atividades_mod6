@@ -1,0 +1,29 @@
+[1.427s] Invoking command in '/home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/src/turtlebot_package': PYTHONPATH=/home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/build/turtlebot_package/prefix_override:/home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/install/turtlebot_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/turtlebot_package build --build-base /home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/build/turtlebot_package/build install --record /home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/build/turtlebot_package/install.log --single-version-externally-managed
+[1.977s] running egg_info
+[1.982s] writing ../../build/turtlebot_package/turtlebot_package.egg-info/PKG-INFO
+[1.983s] writing dependency_links to ../../build/turtlebot_package/turtlebot_package.egg-info/dependency_links.txt
+[1.983s] writing entry points to ../../build/turtlebot_package/turtlebot_package.egg-info/entry_points.txt
+[1.983s] writing requirements to ../../build/turtlebot_package/turtlebot_package.egg-info/requires.txt
+[1.983s] writing top-level names to ../../build/turtlebot_package/turtlebot_package.egg-info/top_level.txt
+[1.986s] reading manifest file '../../build/turtlebot_package/turtlebot_package.egg-info/SOURCES.txt'
+[1.988s] writing manifest file '../../build/turtlebot_package/turtlebot_package.egg-info/SOURCES.txt'
+[1.989s] running build
+[1.991s] running build_py
+[1.993s] copying turtlebot_package/__init__.py -> /home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/build/turtlebot_package/build/lib/turtlebot_package
+[1.993s] copying turtlebot_package/controller_1.py -> /home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/build/turtlebot_package/build/lib/turtlebot_package
+[1.993s] running install
+[1.994s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.994s]   warnings.warn(
+[1.996s] running install_lib
+[1.998s] copying /home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/build/turtlebot_package/build/lib/turtlebot_package/__init__.py -> /home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/install/turtlebot_package/lib/python3.10/site-packages/turtlebot_package
+[1.999s] copying /home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/build/turtlebot_package/build/lib/turtlebot_package/controller_1.py -> /home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/install/turtlebot_package/lib/python3.10/site-packages/turtlebot_package
+[2.000s] byte-compiling /home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/install/turtlebot_package/lib/python3.10/site-packages/turtlebot_package/__init__.py to __init__.cpython-310.pyc
+[2.001s] byte-compiling /home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/install/turtlebot_package/lib/python3.10/site-packages/turtlebot_package/controller_1.py to controller_1.cpython-310.pyc
+[2.003s] running install_data
+[2.004s] running install_egg_info
+[2.007s] removing '/home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/install/turtlebot_package/lib/python3.10/site-packages/turtlebot_package-0.0.0-py3.10.egg-info' (and everything under it)
+[2.021s] Copying ../../build/turtlebot_package/turtlebot_package.egg-info to /home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/install/turtlebot_package/lib/python3.10/site-packages/turtlebot_package-0.0.0-py3.10.egg-info
+[2.022s] running install_scripts
+[2.081s] Installing entrypoint script to /home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/install/turtlebot_package/lib/turtlebot_package
+[2.083s] writing list of installed files to '/home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/build/turtlebot_package/install.log'
+[2.144s] Invoked command in '/home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/src/turtlebot_package' returned '0': PYTHONPATH=/home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/build/turtlebot_package/prefix_override:/home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/install/turtlebot_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/turtlebot_package build --build-base /home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/build/turtlebot_package/build install --record /home/manumorais/ponderada2/atividades_mod6/ponderada2/ros2_ws/build/turtlebot_package/install.log --single-version-externally-managed

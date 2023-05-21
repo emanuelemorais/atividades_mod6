@@ -1,0 +1,3 @@
+[console_scripts]
+entrypoint = turtlebot_package:main
+

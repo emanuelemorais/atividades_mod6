@@ -20,7 +20,7 @@ Para rodar o projeto é necessário seguir os seguinter passos:
 
 1. Clonar esse projeto
 2. Entrar no diretorio ``` atividades_mod6/ponderada2/ros2_ws/ ``` e rodar o comando ``` colcon build --packages-select turtlebot_package ```
-3. No mesmo terimanl, rodar o comando ``` source install/setup.bash ```
+3. No mesmo terminal, rodar o comando ``` source install/setup.bash ```
 4. Por fim, no mesmo terminal, rodar o comando ``` ros2 run turtlebot_package entrypoint ```
 5. Em outro terminal rodar o comando ``` ros2 launch turtlebot3_gazebo empty_world.launch.py ```
 

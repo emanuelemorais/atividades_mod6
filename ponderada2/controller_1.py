@@ -61,35 +61,44 @@ class Turtle_Controller(Node):
         speed = Twist()
         
         #Atribui a posição de destino o primeiro item da fila
-        self.position_goal = self.queue[0]
-    
-        #Calcula o arcontangente em que o robô deve rotacionar
-        goal_x = self.position_goal["x"]
-        goal_y = self.position_goal["y"]
-
-        delta_x = goal_x - self.coordinates["x"] 
-        delta_y = goal_y - self.coordinates["y"]
-
-        atan_result = atan2(delta_y, delta_x)
+        try:
+            self.position_goal = self.queue[0]
         
-        #Condição de que suas posições atuais forem menor que 0.1 o primeiro item da fila é removido
-        if abs(self.coordinates["x"] - self.position_goal["x"]) < 0.1 and abs(self.coordinates["y"] - self.position_goal["y"]) < 0.1:
-            self.queue.dequeue()
-        
-        # Rotaciona o robô de acordo com sua posição atual e posição que deseja ir
-        if abs(atan_result - self.coordinates["theta"]) > 0.1:
+            #Calcula o arcontangente em que o robô deve rotacionar
+            goal_x = self.position_goal["x"]
+            goal_y = self.position_goal["y"]
+
+            delta_x = goal_x - self.coordinates["x"] 
+            delta_y = goal_y - self.coordinates["y"]
+
+            atan_result = atan2(delta_y, delta_x)
+            
+            #Condição de que suas posições atuais forem menor que 0.1 o primeiro item da fila é removido
+            if abs(self.coordinates["x"] - self.position_goal["x"]) < 0.1 and abs(self.coordinates["y"] - self.position_goal["y"]) < 0.1:
+                self.queue.dequeue()
+            
+            # Rotaciona o robô de acordo com sua posição atual e posição que deseja ir
+            if abs(atan_result - self.coordinates["theta"]) > 0.1:
+                speed.linear.x = 0.0
+                if (atan_result - self.coordinates["theta"]) > 0.0:
+                    speed.angular.z = 0.3
+                else:
+                    speed.angular.z = -0.3
+                self.publisher.publish(speed)
+                
+            
+            # Robô anda se já estiver na direção do ponto que deseja chegar
+            else: 
+                speed.linear.x = 0.5
+                speed.angular.z = 0.0
+                self.publisher.publish(speed)
+                
+        except IndexError:
             speed.linear.x = 0.0
-            if (atan_result - self.coordinates["theta"]) > 0.0:
-                speed.angular.z = 0.3
-            else:
-                speed.angular.z = -0.3
-            self.publisher.publish(speed)
-        
-        # Robô anda se já estiver na direção do ponto que deseja chegar
-        else: 
-            speed.linear.x = 0.5
             speed.angular.z = 0.0
             self.publisher.publish(speed)
+            self.get_logger().info("Fim da jornada")
+            exit()
             
 
 def main(args=None):

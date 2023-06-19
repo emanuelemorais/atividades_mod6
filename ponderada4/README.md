@@ -1,1 +1,2 @@
-# Ponderada 4
+# Ponderada 4 - Backend para transmissão e armazenamento de imagens
+

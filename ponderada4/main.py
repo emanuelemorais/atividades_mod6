@@ -20,7 +20,7 @@ def read_root():
     return HTMLResponse(content=open("static/index.html", "r").read())
 
 
-@app.get("/record")
+@app.post("/record")
 def read():
     filename = record()
     supabase.storage.from_(bucket_name).upload(f'{filename}.mp4', f'./{filename}')
